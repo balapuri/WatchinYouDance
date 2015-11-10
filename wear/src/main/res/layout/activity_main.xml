@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/watch_view_stub"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:id="@+id/scrollview"
+        android:onClick="showListView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/dark_blue"
+                    android:id="@+id/watchProfileDistance"
+                    android:padding="5dp"
+                    android:text="20ft"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/watchProfilePic"
+                    android:src="@drawable/profilepic"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/dark_blue"
+                    android:gravity="center_vertical"
+                    android:id="@+id/watchProfilePronoun"
+                    android:text="ze/zir"
+                    android:padding="5dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"
+                android:id="@+id/watchProfileName"
+                android:text="Name"
+
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"
+                android:id="@+id/watchProfileRole"
+                android:text="Lead/Follow"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.wearable.view.BoxInsetLayout>
